@@ -44,37 +44,37 @@ const { data: relatedArticles } = await useAsyncData(`content:related-articles:$
         </h2>
 
         <UPageGrid class="mt-6">
-        <UCard v-for="article in relatedArticles" :key="article._path" as="article" :ui="{ base: 'relative' }">
-          <template #header>
-            <header>
-              <h3>
-                <NuxtLink :to="article._path">
-                  <span class="absolute inset-0" />
-                  <span>
-                    {{ article.title }}
-                  </span>
-                </NuxtLink>
-              </h3>
-            </header>
-          </template>
+          <UCard v-for="article in relatedArticles" :key="article._path" as="article" :ui="{ base: 'relative' }">
+            <template #header>
+              <header>
+                <h3>
+                  <NuxtLink :to="article._path">
+                    <span class="absolute inset-0" />
+                    <span>
+                      {{ article.title }}
+                    </span>
+                  </NuxtLink>
+                </h3>
+              </header>
+            </template>
 
-          <p>
-            {{ article.description }}
-          </p>
+            <p>
+              {{ article.description }}
+            </p>
 
-          <template #footer>
-            <footer>
-              <dl>
-                <dt class="sr-only">
-                  Published at
-                </dt>
-                <dd>
-                  {{ formatDate(article.publishedAt) }}
-                </dd>
-              </dl>
-            </footer>
-          </template>
-        </UCard>
+            <template #footer>
+              <footer>
+                <dl>
+                  <dt class="sr-only">
+                    Published at
+                  </dt>
+                  <dd>
+                    {{ formatDate(article.publishedAt) }}
+                  </dd>
+                </dl>
+              </footer>
+            </template>
+          </UCard>
         </UPageGrid>
       </section>
     </UPage>
