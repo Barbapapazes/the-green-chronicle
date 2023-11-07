@@ -8,15 +8,16 @@ export default defineNuxtConfig({
     documentDriven: true,
   },
   colorMode: {
-    preference: 'light'
+    preference: 'light',
   },
   ui: {
     icons: ['heroicons', 'simple-icons'],
   },
   nitro: {
     prerender: {
+      failOnError: false,
       crawlLinks: true,
-      routes: ['/']
-    }
-  }
+      routes: ['/'],
+    },
+  },
 })
