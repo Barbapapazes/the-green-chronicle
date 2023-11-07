@@ -3,8 +3,8 @@ const socials = useAppConfig().blog.socials
 </script>
 
 <template>
-  <UButton :to="socials.twitter" icon="i-simple-icons-x" variant="ghost" color="gray">
-    <span class="sr-only">Follow us on Twitter</span>
+  <UButton :to="socials.x" icon="i-simple-icons-x" variant="ghost" color="gray">
+    <span class="sr-only">Follow us on X</span>
   </UButton>
   <UButton :to="socials.github" icon="i-simple-icons-github" variant="ghost" color="gray">
     <span class="sr-only">Follow us on GitHub</span>

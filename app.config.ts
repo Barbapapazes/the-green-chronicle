@@ -5,8 +5,8 @@ export default defineAppConfig({
   },
   blog: {
     socials: {
-      twitter: 'soubiran_',
-      github: 'barbapapazes',
+      x: 'https://x.com/soubiran_',
+      github: 'https://github.com/barbapapazes',
     },
   },
 })
