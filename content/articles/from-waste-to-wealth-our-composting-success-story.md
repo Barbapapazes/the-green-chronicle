@@ -12,6 +12,7 @@ authors:
     avatar: https://esteban-soubiran.site/esteban.webp
     social: https://x.com/soubiran_
 publishedAt: 2023-12-05
+top: true
 ---
 
 Composting is a story of transformation, turning organic waste into gold for the soil. In this article, we narrate our journey of implementing a successful composting program, highlighting the positive impact on soil fertility and plant health. By meticulously managing our organic waste, we've created a system that not only reduces landfill contributions but also serves as a blueprint for sustainable waste management.

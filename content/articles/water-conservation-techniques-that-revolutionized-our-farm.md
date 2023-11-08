@@ -12,6 +12,7 @@ authors:
     avatar: https://esteban-soubiran.site/esteban.webp
     social: https://x.com/soubiran_
 publishedAt: 2024-01-02
+top: true
 ---
 
 Water is the lifeblood of agriculture, and conserving it is one of our foremost priorities. Discover the innovative water-saving techniques we've implemented, from drip irrigation to scheduling irrigation at optimal times to reduce evaporation. These methods have not only conserved precious resources but also spurred an increase in crop yields, demonstrating that sustainability and productivity can go hand in hand.

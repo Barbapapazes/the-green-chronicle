@@ -17,7 +17,7 @@ defineProps<{
 </script>
 
 <template>
-  <UCard as="article" :ui="{ base: 'relative group' }">
+  <UCard as="article" :ui="{ base: 'relative group' }" >
     <template #header>
       <header>
         <div v-if="image" class="mb-2 overflow-hidden">
@@ -47,13 +47,7 @@ defineProps<{
               Author
             </dt>
             <dd>
-              <UAvatarGroup size="sm" :max="2">
-                <UAvatar
-                  v-for="author in authors" :key="author.name"
-                  :src="author.avatar"
-                  :alt="author.name"
-                />
-              </UAvatarGroup>
+              <ArticleCardAuthors :authors="authors" />
             </dd>
           </template>
           <template v-if="date">
@@ -61,7 +55,7 @@ defineProps<{
               Published at
             </dt>
             <dd>
-              {{ formatDate(date) }}
+              <ArticleCardDate :date="date" />
             </dd>
           </template>
         </dl>

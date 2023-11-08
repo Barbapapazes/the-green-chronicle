@@ -105,7 +105,7 @@ const { metaSymbol } = useShortcuts()
 
     <template #right>
       <UTooltip text="Search" :shortcuts="[metaSymbol, 'k']">
-        <UButton icon="i-heroicons-magnifying-glass-solid" variant="ghost" color="stone" @click="toggleDocsSearch">
+        <UButton icon="i-heroicons-magnifying-glass-solid" variant="ghost" color="gray" @click="toggleDocsSearch">
           <span class="sr-only">Search</span>
         </UButton>
       </UTooltip>

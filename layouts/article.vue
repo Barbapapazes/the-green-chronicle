@@ -15,6 +15,7 @@ const host = useAppConfig().blog.host
         :description="page.description"
       >
         <template #headline>
+          <!-- Waiting for https://github.com/nuxt/ui-pro/issues/114 -->
           <!-- <dl>
             <dt class="sr-only">
               Categories
@@ -57,15 +58,15 @@ const host = useAppConfig().blog.host
             Published at
           </dt>
           <dd>
-            <span>
+            <time :datetime="page.publishedAt">
               {{ formatDate(page.publishedAt) }}
-            </span>
+            </time>
           </dd>
         </dl>
       </UPageHeader>
 
-      <div class="max-w-5xl mx-auto relative">
-        <div class="relative lg:absolute flex lg:flex-col gap-2">
+      <div class="mt-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[96px_768px_1fr]">
+        <div class="lg:px-8 flex lg:flex-col lg:items-end gap-2">
           <UTooltip text="Share on X">
             <UButton
               :to="`https://twitter.com/share?text=${page.title}&url=${host}${page._path}`"
@@ -101,10 +102,22 @@ const host = useAppConfig().blog.host
           </UTooltip>
         </div>
 
-        <div class="max-w-3xl mx-auto">
-          <UPageBody prose>
+        <div class="mt-8 lg:mt-0 w-full">
+          <UPageBody prose :ui="{ wrapper: 'mt-0' }">
             <slot />
           </UPageBody>
+        </div>
+
+        <div class="row-start-2 lg:row-start-1 lg:col-start-3 lg:px-8 space-y-8">
+          <UButton to="#" color="primary" size="lg" :ui="{ base: 'w-full justify-center' }" class="hidden lg:inline-flex">
+            Contact us
+          </UButton>
+
+          <UDivider />
+
+          <UDocsToc :links="page.body.toc.links" :ui="{ wrapper: 'top-4', container: 'py-0 pb-3 lg:py-0 lg:pb-8' }" />
+
+          <UDivider class="lg:hidden" />
         </div>
       </div>
 

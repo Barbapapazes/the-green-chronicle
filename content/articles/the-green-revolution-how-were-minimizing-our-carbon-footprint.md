@@ -12,6 +12,7 @@ authors:
     avatar: https://esteban-soubiran.site/esteban.webp
     social: https://x.com/soubiran_
 publishedAt: 2023-11-21
+top: true
 ---
 
 In this era of environmental consciousness, our farming methods have evolved to prioritize sustainability. We take you through our transition to greener practices, from utilizing renewable energy sources to adopting no-till farming, which not only reduce our carbon footprint but also enhance soil health. This is a reflection of our commitment to being stewards of the land and a testament to the possibilities within the reach of modern agriculture.

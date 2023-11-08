@@ -2,6 +2,14 @@ export default defineAppConfig({
   ui: {
     primary: 'yellow',
     gray: 'stone',
+    divider: {
+      border: {
+        base: 'border-stone-200',
+      },
+    },
+    button: {
+      base: 'transition ease-in',
+    },
     tooltip: {
       background: 'bg-stone-50',
       color: 'text-stone-900',

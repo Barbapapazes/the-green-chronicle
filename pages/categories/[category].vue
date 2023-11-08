@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
+definePageMeta({
+  colorMode: 'light',
+})
+
 const route = useRoute()
 
 const category = route.params.category as string
@@ -44,29 +48,23 @@ const otherArticles = computed(() => data.value.slice(1))
             </p>
 
             <dl v-if="firstArticle.publishedAt || firstArticle.authors" class="mt-6 flex justify-between items-center text-sm">
-          <template v-if="firstArticle.authors">
-            <dt class="sr-only">
-              Author
-            </dt>
-            <dd>
-              <UAvatarGroup size="sm" :max="2">
-                <UAvatar
-                  v-for="author in firstArticle.authors" :key="author.name"
-                  :src="author.avatar"
-                  :alt="author.name"
-                />
-              </UAvatarGroup>
-            </dd>
-          </template>
-          <template v-if="firstArticle.publishedAt">
-            <dt class="sr-only">
-              Published at
-            </dt>
-            <dd>
-              {{ formatDate(firstArticle.publishedAt) }}
-            </dd>
-          </template>
-        </dl>
+              <template v-if="firstArticle.authors">
+                <dt class="sr-only">
+                  Author
+                </dt>
+                <dd>
+                  <ArticleCardAuthors :authors="firstArticle.authors" />
+                </dd>
+              </template>
+              <template v-if="firstArticle.publishedAt">
+                <dt class="sr-only">
+                  Published at
+                </dt>
+                <dd>
+                  <ArticleCardDate :date="firstArticle.publishedAt" />
+                </dd>
+              </template>
+            </dl>
           </div>
 
           <div class="overflow-hidden rounded-md xl:col-span-2">
