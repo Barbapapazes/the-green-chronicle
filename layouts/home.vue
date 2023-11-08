@@ -15,11 +15,11 @@ const otherTopArticles = computed(() => topArticles.value.slice(1))
 
 <template>
   <ULandingSection>
-    <div class="grid grid-cols-2 gap-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
       <UCard :ui="{ base: 'relative group', body: { base: 'space-y-6', padding: '' } }">
         <header>
           <div v-if="firstTopArticle.image" class="mb-2 overflow-hidden">
-            <img :src="firstTopArticle.image.src" :alt="firstTopArticle.image.alt" class="w-full h-48 object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200">
+            <img :src="firstTopArticle.image.src" :alt="firstTopArticle.image.alt" class="w-full h-80 lg:h-48 object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200">
           </div>
 
           <h3 class="text-4xl font-bold">
@@ -61,7 +61,7 @@ const otherTopArticles = computed(() => topArticles.value.slice(1))
         <UCard v-for="article in otherTopArticles" :key="article._path" :ui="{ base: 'relative group', body: { padding: '' } }">
           <template #header>
             <header class="grid grid-cols-5 gap-3 items-center">
-              <div v-if="article.image" class="overflow-hidden col-span-2">
+              <div v-if="article.image" class="overflow-hidden rounded-l-md col-span-2">
                 <img :src="article.image.src" :alt="article.image.alt" class="aspect-[16/9] object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200">
               </div>
 
@@ -86,7 +86,7 @@ const otherTopArticles = computed(() => topArticles.value.slice(1))
     </div>
   </ULandingSection>
   <ULandingSection title="Latest news">
-    <div class="bg-stone-300 -m-12 p-12 rounded-lg grid grid-cols-4 gap-8">
+    <div class="bg-stone-300 p-4 xl:-m-12 lg:p-12 rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       <ArticleCard v-for="article in latestArticles" :key="article._path" :to="article._path" :title="article.title" :description="article.description" :date="article.publishedAt" :image="article.image" :authors="article.authors" class="bg-transparent" />
     </div>
   </ULandingSection>
@@ -100,7 +100,7 @@ const otherTopArticles = computed(() => topArticles.value.slice(1))
       <UCard v-for="article in customerStories" :key="article._path" :ui="{ base: 'relative group', body: { padding: '' } }">
         <template #header>
           <header class="grid grid-cols-5 gap-3 items-center">
-            <div v-if="article.image" class="overflow-hidden col-span-2">
+            <div v-if="article.image" class="overflow-hidden rounded-l-md col-span-2">
               <img :src="article.image.src" :alt="article.image.alt" class="aspect-[16/9] object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200">
             </div>
 

@@ -32,8 +32,8 @@ const otherArticles = computed(() => data.value.slice(1))
       />
 
       <UPageBody>
-        <div class="group relative grid grid-cols-2 xl:grid-cols-3 gap-8 items-center xl:items-start">
-          <div class="flex flex-col">
+        <div class="group relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-center xl:items-start">
+          <div class="md:col-start-1 md:row-start-1 flex flex-col">
             <h3 class="text-xl font-semibold">
               <NuxtLink :to="firstArticle._path">
                 <span class="absolute inset-0 z-10" />
@@ -67,7 +67,7 @@ const otherArticles = computed(() => data.value.slice(1))
             </dl>
           </div>
 
-          <div class="overflow-hidden rounded-md xl:col-span-2">
+          <div class="overflow-hidden rounded-md row-start-1 md:col-start-2 xl:col-span-2">
             <img v-if="firstArticle.image" :src="firstArticle.image.src" :alt="firstArticle.image.alt" class="aspect-[16/9] object-cover transition-transform transform ease-in duration-300 group-hover:scale-[102%]" aria-hidden="true">
           </div>
         </div>
