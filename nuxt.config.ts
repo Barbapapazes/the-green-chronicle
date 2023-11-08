@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxtjs/fontaine',
+  ],
+  css: [
+    '~/assets/app.css',
   ],
   content: {
     documentDriven: true,

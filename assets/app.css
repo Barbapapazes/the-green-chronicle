@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Noto";
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  src: url("/assets/fonts/noto.ttf") format("truetype");
+}
