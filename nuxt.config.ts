@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
       crawlLinks: true,
-      routes: ['/'],
+      routes: ['/', '/api/search.json'],
     },
   },
 })
