@@ -17,7 +17,7 @@ defineProps<{
 </script>
 
 <template>
-  <UCard as="article" :ui="{ base: 'relative group' }" >
+  <UCard as="article" :ui="{ base: 'relative group' }">
     <template #header>
       <header>
         <div v-if="image" class="mb-2 overflow-hidden">
