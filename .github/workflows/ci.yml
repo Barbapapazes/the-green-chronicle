@@ -44,3 +44,5 @@ jobs:
 
       - name: Generate files
         run: pnpm run build
+        env:
+          NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
