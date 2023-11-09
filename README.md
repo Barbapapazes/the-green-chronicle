@@ -1,3 +1,5 @@
+![the-green-chronicle-home](https://github.com/Barbapapazes/the-green-chronicle/assets/45267552/d6df661f-1cfc-4f4e-bc0c-d97480d0a885)
+
 # The Green Chronicle
 
 [![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
