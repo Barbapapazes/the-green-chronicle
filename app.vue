@@ -119,12 +119,12 @@ const { metaSymbol } = useShortcuts()
 
   <UFooter class="mt-24">
     <template #top>
-      <div class="grid xl:grid-cols-2">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-0">
         <span class="text-xl font-bold">
           The Green Chronicle
         </span>
 
-        <ol class="flex justify-end gap-20">
+        <ol class="xl:place-self-end grid grid-cols-2 md:grid-cols-3 gap-8 xl:gap-20">
           <li v-for="item in footerLinks" :key="item.label">
             <span class="font-semibold">
               {{ item.label }}
