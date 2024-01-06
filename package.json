@@ -14,14 +14,14 @@
   "dependencies": {
     "@iconify-json/heroicons": "^1.1.13",
     "@iconify-json/simple-icons": "^1.1.77",
-    "@nuxt/content": "^2.9.0",
-    "@nuxt/ui-pro": "^0.4.2"
+    "@nuxt/content": "^2.10.0",
+    "@nuxt/ui-pro": "^0.6.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^1.1.0",
-    "@nuxt/devtools": "1.0.0",
+    "@nuxt/devtools": "1.0.6",
     "@nuxtjs/fontaine": "^0.4.1",
     "eslint": "^8.53.0",
-    "nuxt": "^3.8.1"
+    "nuxt": "^3.9.1"
   }
 }
