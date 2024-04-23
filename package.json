@@ -12,8 +12,8 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@iconify-json/heroicons": "^1.1.13",
-    "@iconify-json/simple-icons": "^1.1.77",
+    "@iconify-json/heroicons": "^1.1.20",
+    "@iconify-json/simple-icons": "^1.1.100",
     "@nuxt/content": "^2.9.0",
     "@nuxt/ui-pro": "^0.4.2"
   },
