@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
-  modules: ['@nuxt/content', '@nuxt/ui', '@nuxtjs/fontaine', '@nuxt/eslint'],
+  modules: [
+    '@nuxt/content',
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    "@nuxt/fonts"
+  ],
   css: [
     '~/assets/app.css',
   ],
