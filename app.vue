@@ -91,7 +91,7 @@ const footerLinks = [
   },
 ]
 
-const { toggleDocsSearch } = useUIState()
+const { toggleContentSearch } = useUIState()
 const { metaSymbol } = useShortcuts()
 </script>
 
@@ -112,7 +112,7 @@ const { metaSymbol } = useShortcuts()
           icon="i-heroicons-magnifying-glass-solid"
           variant="ghost"
           color="gray"
-          @click="toggleDocsSearch"
+          @click="toggleContentSearch"
         >
           <span class="sr-only">Search</span>
         </UButton>
