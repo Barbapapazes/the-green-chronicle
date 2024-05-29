@@ -47,7 +47,10 @@ const otherArticles = computed(() => data.value.slice(1))
               {{ firstArticle.description }}
             </p>
 
-            <dl v-if="firstArticle.publishedAt || firstArticle.authors" class="mt-6 flex justify-between items-center text-sm">
+            <dl
+              v-if="firstArticle.publishedAt || firstArticle.authors"
+              class="mt-6 flex justify-between items-center text-sm"
+            >
               <template v-if="firstArticle.authors">
                 <dt class="sr-only">
                   Author
@@ -68,12 +71,27 @@ const otherArticles = computed(() => data.value.slice(1))
           </div>
 
           <div class="overflow-hidden rounded-md row-start-1 md:col-start-2 xl:col-span-2">
-            <img v-if="firstArticle.image" :src="firstArticle.image.src" :alt="firstArticle.image.alt" class="aspect-[16/9] object-cover transition-transform transform ease-in duration-300 group-hover:scale-[102%]" aria-hidden="true">
+            <img
+              v-if="firstArticle.image"
+              :src="firstArticle.image.src"
+              :alt="firstArticle.image.alt"
+              class="aspect-[16/9] object-cover transition-transform transform ease-in duration-300 group-hover:scale-[102%]"
+              aria-hidden="true"
+            >
           </div>
         </div>
 
         <UPageGrid class="mt-8">
-          <ArticleCard v-for="article in otherArticles" :key="article._id" :to="article._path" :title="article.title" :description="article.description" :date="article.publishedAt" :image="article.image" :authors="article.authors" />
+          <ArticleCard
+            v-for="article in otherArticles"
+            :key="article._id"
+            :to="article._path"
+            :title="article.title"
+            :description="article.description"
+            :date="article.publishedAt"
+            :image="article.image"
+            :authors="article.authors"
+          />
         </UPageGrid>
       </UPageBody>
     </UPage>

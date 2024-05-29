@@ -104,8 +104,16 @@ const { metaSymbol } = useShortcuts()
     </template>
 
     <template #right>
-      <UTooltip text="Search" :shortcuts="[metaSymbol, 'k']">
-        <UButton icon="i-heroicons-magnifying-glass-solid" variant="ghost" color="gray" @click="toggleDocsSearch">
+      <UTooltip
+        text="Search"
+        :shortcuts="[metaSymbol, 'k']"
+      >
+        <UButton
+          icon="i-heroicons-magnifying-glass-solid"
+          variant="ghost"
+          color="gray"
+          @click="toggleDocsSearch"
+        >
           <span class="sr-only">Search</span>
         </UButton>
       </UTooltip>
@@ -125,13 +133,22 @@ const { metaSymbol } = useShortcuts()
         </span>
 
         <ol class="xl:place-self-end grid grid-cols-2 md:grid-cols-3 gap-8 xl:gap-20">
-          <li v-for="item in footerLinks" :key="item.label">
+          <li
+            v-for="item in footerLinks"
+            :key="item.label"
+          >
             <span class="font-semibold">
               {{ item.label }}
             </span>
             <ol class="mt-3 flex flex-col text-zinc-700">
-              <li v-for="child in item.children" :key="child.label">
-                <ULink :to="child.to" class="block py-1 hover:underline hover:underline-offset-2">
+              <li
+                v-for="child in item.children"
+                :key="child.label"
+              >
+                <ULink
+                  :to="child.to"
+                  class="block py-1 hover:underline hover:underline-offset-2"
+                >
                   {{ child.label }}
                 </ULink>
               </li>
@@ -161,6 +178,10 @@ const { metaSymbol } = useShortcuts()
   </UFooter>
 
   <ClientOnly>
-    <LazyUDocsSearch :files="files" :links="links" :navigation="navigation" />
+    <LazyUDocsSearch
+      :files="files"
+      :links="links"
+      :navigation="navigation"
+    />
   </ClientOnly>
 </template>

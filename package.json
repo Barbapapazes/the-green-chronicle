@@ -18,10 +18,10 @@
     "@nuxt/ui-pro": "^0.4.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.1.0",
     "@nuxt/devtools": "1.0.0",
+    "@nuxt/eslint": "^0.3.13",
     "@nuxtjs/fontaine": "^0.4.1",
-    "eslint": "^8.53.0",
+    "eslint": "^9.3.0",
     "nuxt": "^3.8.1"
   }
 }

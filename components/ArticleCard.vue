@@ -17,11 +17,21 @@ defineProps<{
 </script>
 
 <template>
-  <UCard as="article" :ui="{ base: 'relative group' }">
+  <UCard
+    as="article"
+    :ui="{ base: 'relative group' }"
+  >
     <template #header>
       <header>
-        <div v-if="image" class="mb-2 overflow-hidden">
-          <img :src="image.src" :alt="image.alt" class="w-full h-48 object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200">
+        <div
+          v-if="image"
+          class="mb-2 overflow-hidden"
+        >
+          <img
+            :src="image.src"
+            :alt="image.alt"
+            class="w-full h-48 object-cover transform group-hover:scale-[101%] transition-transform ease-in duration-200"
+          >
         </div>
 
         <h3 class="text-lg font-semibold">
@@ -41,7 +51,10 @@ defineProps<{
 
     <template #footer>
       <footer>
-        <dl v-if="date || authors" class="flex justify-between items-center text-sm">
+        <dl
+          v-if="date || authors"
+          class="flex justify-between items-center text-sm"
+        >
           <template v-if="authors">
             <dt class="sr-only">
               Author

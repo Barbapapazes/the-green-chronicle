@@ -9,9 +9,14 @@ defineProps<{
 </script>
 
 <template>
-  <UAvatarGroup v-if="authors.length > 1" size="sm" :max="3">
+  <UAvatarGroup
+    v-if="authors.length > 1"
+    size="sm"
+    :max="3"
+  >
     <UAvatar
-      v-for="author in authors" :key="author.name"
+      v-for="author in authors"
+      :key="author.name"
       :src="author.avatar"
       :alt="author.name"
     />
