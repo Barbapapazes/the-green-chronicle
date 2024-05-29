@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/ui',
     '@nuxt/eslint',
-    "@nuxt/fonts"
+    '@nuxt/fonts',
   ],
   css: [
     '~/assets/app.css',
