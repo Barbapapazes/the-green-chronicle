@@ -144,7 +144,7 @@ const host = useAppConfig().blog.host
 
           <UDivider />
 
-          <UDocsToc
+          <UContentToc
             :links="page.body.toc.links"
             :ui="{ wrapper: 'top-4', container: 'py-0 pb-3 lg:py-0 lg:pb-8' }"
           />
