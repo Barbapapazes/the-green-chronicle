@@ -11,7 +11,7 @@ defineProps<{
 <template>
   <UAvatarGroup
     v-if="authors.length > 1"
-    size="sm"
+    size="xs"
     :max="3"
   >
     <UAvatar
@@ -21,12 +21,12 @@ defineProps<{
       :alt="author.name"
     />
   </UAvatarGroup>
-  <template v-else>
+  <template v-else-if="authors[0]">
     <div class="flex items-center gap-2 text-sm">
       <UAvatar
         :src="authors[0].avatar"
         :alt="authors[0].name"
-        size="sm"
+        size="xs"
       />
       <span>
         {{ authors[0].name }}

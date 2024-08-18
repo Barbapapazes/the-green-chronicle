@@ -4,34 +4,42 @@ export default defineNuxtConfig({
   },
 
   extends: ['@nuxt/ui-pro'],
+
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
     '@nuxt/eslint',
     '@nuxt/fonts',
+    '@nuxt/image',
+    '@nuxthq/studio',
   ],
+
+  runtimeConfig: {
+    app: {
+      url: '',
+    },
+  },
+
   css: [
     '~/assets/app.css',
   ],
-  content: {
-    documentDriven: true,
-  },
+
   colorMode: {
     preference: 'light',
   },
-  ui: {
-    icons: ['heroicons', 'simple-icons'],
-  },
+
   nitro: {
     prerender: {
-      failOnError: false,
       crawlLinks: true,
       routes: ['/', '/api/search.json'],
     },
   },
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
+
+  compatibilityDate: '2024-08-18',
 })

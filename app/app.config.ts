@@ -2,19 +2,8 @@ export default defineAppConfig({
   ui: {
     primary: 'yellow',
     gray: 'stone',
-    divider: {
-      border: {
-        base: 'border-stone-200',
-      },
-    },
     button: {
       base: 'transition ease-in',
-    },
-    tooltip: {
-      background: 'bg-stone-50',
-      color: 'text-stone-900',
-      rounded: 'rounded',
-      ring: 'ring-1 ring-stone-200',
     },
     card: {
       shadow: '',
@@ -31,29 +20,167 @@ export default defineAppConfig({
         padding: 'px-0 py-0 pt-4 sm:px-0',
       },
     },
-    footer: {
-      wrapper: 'bg-stone-50',
-      top: {
-        wrapper: 'bg-stone-200',
+  },
+  app: {
+    name: 'The Green Chronicle',
+    description: 'A blog about sustainable living and eco-friendly practices.',
+  },
+  header: {
+    links: [
+      {
+        label: 'Seasonal Guides',
+        to: '/categories/seasonal-guides',
       },
-    },
-    header: {
-      wrapper: 'bg-white backdrop-blur-none border-none relative',
-      logo: 'flex-shrink-0 font-bold text-xl text-stone-900 flex items-end gap-1.5',
-    },
-    page: {
-      header: {
-        wrapper: 'relative border-b border-stone-200 py-8',
-        title: 'text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight',
-        description: 'mt-4 text-lg text-stone-500',
+      {
+        label: 'Environmental Impacts',
+        to: '/categories/environmental-impacts',
+      },
+      {
+        label: 'Sustainable Practices',
+        to: '/categories/sustainable-practices',
+      },
+      {
+        label: 'Customer Stories',
+        to: '/categories/customer-stories',
+      },
+      {
+        label: 'Behind the Scenes',
+        to: '/categories/behind-the-scenes',
+      },
+    ],
+  },
+  footer: {
+    links: [
+      {
+        label: 'Product',
+        children: [
+          {
+            label: 'Features',
+            to: '#',
+          },
+          {
+            label: 'Pricing',
+            to: '#',
+          },
+          {
+            label: 'Integrations',
+            to: '#',
+          },
+          {
+            label: 'Security',
+            to: '#',
+          },
+        ],
+      },
+      {
+        label: 'Shop',
+        children: [
+          {
+            label: 'Plants',
+            to: '#',
+          },
+          {
+            label: 'Pots',
+            to: '#',
+          },
+          {
+            label: 'Accessories',
+            to: '#',
+          },
+          {
+            label: 'Gifts',
+            to: '#',
+          },
+        ],
+      },
+      {
+        label: 'Company',
+        children: [
+          {
+            label: 'About',
+            to: '#',
+          },
+          {
+            label: 'Blog',
+            to: '#',
+          },
+          {
+            label: 'Careers',
+            to: '#',
+          },
+          {
+            label: 'Press',
+            to: '#',
+          },
+        ],
+      },
+      {
+        label: 'Ecosystem',
+        children: [
+          {
+            label: 'Orion',
+            to: 'https://orion.barbapapazes.dev',
+            target: '_blank',
+          },
+          {
+            label: 'Slantire',
+            to: 'https://slantire.barbapapazes.dev',
+            target: '_blank',
+          },
+          {
+            label: 'Cub\'IA',
+            to: 'https://cub-ia.barbapapazes.dev',
+            target: '_blank',
+          },
+        ],
+      },
+    ],
+    copyrightNotice: '© 2023 The Green Chronicle. All rights reserved.',
+    smallLinks: [
+      {
+        label: 'Privacy Policy',
+        to: '#',
+      },
+      {
+        label: 'Terms of Service',
+        to: '#',
+      },
+      {
+        label: 'Support my Work',
+        to: 'https://github.com/sponsors/barbapapazes',
+        target: '_blank',
+      },
+    ],
+  },
+  page: {
+    article: {
+      cta: {
+        label: 'Contact Us',
+        to: '/#',
       },
     },
   },
-  blog: {
-    socials: {
-      x: 'https://x.com/soubiran_',
-      github: 'https://github.com/barbapapazes',
+  socials: [
+    {
+      name: 'X',
+      to: 'https://x.com/soubiran_',
+      icon: 'i-simple-icons-x',
+      target: '_blank',
+      rel: 'noopener noreferrer',
     },
-    host: 'https://the-green-chronicle.esteban-soubiran.site',
-  },
+    {
+      name: 'GitHub',
+      to: 'https://github.com/barbapapazes',
+      icon: 'i-simple-icons-github',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+    {
+      name: 'LinkedIn',
+      to: 'https://www.linkedin.com/in/esteban25/',
+      icon: 'i-simple-icons-linkedin',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  ],
 })
