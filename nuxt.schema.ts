@@ -88,6 +88,7 @@ export default defineNuxtSchema({
     socials: field({
       type: 'array',
       title: 'Socials',
+      icon: 'i-mdi-share-variant',
       description: 'The socials configuration.',
       default: [],
     }),
