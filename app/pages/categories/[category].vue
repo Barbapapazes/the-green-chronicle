@@ -75,13 +75,14 @@ const remainingArticles = computed(() => data.value?.slice(1))
           </div>
 
           <div class="overflow-hidden rounded-md row-start-1 md:col-start-2 xl:col-span-2">
-            <NuxtImg
+            <!-- Do not use NuxtImg to avoid breaking images. -->
+            <img
               v-if="firstArticle.image"
               :src="firstArticle.image.src"
               :alt="firstArticle.image.alt"
               class="aspect-[16/9] object-cover transition-transform transform ease-in duration-300 group-hover:scale-[102%]"
               aria-hidden="true"
-            />
+            >
           </div>
         </div>
 
