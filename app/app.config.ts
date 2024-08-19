@@ -160,27 +160,23 @@ export default defineAppConfig({
       },
     },
   },
-  socials: [
-    {
-      name: 'X',
-      to: 'https://x.com/soubiran_',
-      icon: 'i-simple-icons-x',
-      target: '_blank',
-      rel: 'noopener noreferrer',
-    },
-    {
-      name: 'GitHub',
-      to: 'https://github.com/barbapapazes',
-      icon: 'i-simple-icons-github',
-      target: '_blank',
-      rel: 'noopener noreferrer',
-    },
-    {
-      name: 'LinkedIn',
-      to: 'https://www.linkedin.com/in/esteban25/',
-      icon: 'i-simple-icons-linkedin',
-      target: '_blank',
-      rel: 'noopener noreferrer',
-    },
-  ],
+  socials: [{
+    name: 'X',
+    to: 'https://x.com/soubiran_',
+    icon: 'i-simple-icons-x',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  }, {
+    name: 'GitHub',
+    to: 'https://github.com/barbapapazes/the-green-chronicle',
+    icon: 'i-simple-icons-github',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  }, {
+    name: 'LinkedIn',
+    to: 'https://www.linkedin.com/in/esteban25/',
+    icon: 'i-simple-icons-linkedin',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  }],
 })
