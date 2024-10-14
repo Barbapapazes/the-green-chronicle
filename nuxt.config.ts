@@ -1,7 +1,4 @@
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
 
   extends: ['@nuxt/ui-pro'],
 
@@ -14,12 +11,6 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
   ],
 
-  runtimeConfig: {
-    app: {
-      url: '',
-    },
-  },
-
   css: [
     '~/assets/app.css',
   ],
@@ -27,6 +18,17 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   },
+
+  runtimeConfig: {
+    app: {
+      url: '',
+    },
+  },
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  compatibilityDate: '2024-08-18',
 
   nitro: {
     prerender: {
@@ -40,6 +42,4 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-
-  compatibilityDate: '2024-08-18',
 })
